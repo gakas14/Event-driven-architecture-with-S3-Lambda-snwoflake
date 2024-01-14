@@ -1,6 +1,11 @@
 # Event-driven-architecture-with-S3-Lambda-snowflake
 In this project, a lambda function will be triggered when a CSV file is uploaded into a bucket(source bucket); the function will extract the CSV file and load the data in a pandas data frame. Afterward, it will remove some unnecessary characters and then save the data in another S3 bucket(destination bucket), triggering the Snowpipe to load the newly created file automatically into a table in Snowflake.
 
+![pjt_eda drawio](https://github.com/gakas14/Event-driven-architecture-with-S3-Lambda-snwoflake/assets/74584964/fb817e33-ad3f-461f-bab2-74c95669529d)
+
+
+
+
 ## Step 1: Create an s3 bucket as the source bucket to upload the CSV file and another bucket as a destination to save the transform file. 
 
 ### Source bucket
